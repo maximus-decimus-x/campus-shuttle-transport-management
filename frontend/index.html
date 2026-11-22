@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="View university shuttle routes, check departure schedules and reserve campus transport seats.">
+
+    <title>Campus Shuttle | University Transport</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-mark">C</span>
+                <span>Campus Shuttle</span>
+            </a>
+
+            <button class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#routes">Routes</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <a href="pages/login.html" class="login-link">
+                Sign in
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <h1>
+                        University transport,
+                        <span>organized.</span>
+                    </h1>
+
+                    <p>
+                        Find available shuttle routes, check departure
+                        schedules and reserve a seat for your journey
+                        to campus.
+                    </p>
+
+                    <a href="#routes" class="btn btn-primary">
+                        View shuttle routes
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                    <p class="hero-caption">
+                        Campus transportation management system
+                    </p>
+
+                </div>
+
+
+                <!-- Route Network Illustration -->
+                <div class="route-visual">
+
+                    <div class="visual-header">
+                        <div>
+                            <p class="visual-label">ROUTE OVERVIEW</p>
+                            <h2>Campus network</h2>
+                        </div>
+
+                        <span class="visual-tag">Example route</span>
+                    </div>
+
+                    <div class="route-map">
+
+                        <svg viewBox="0 0 420 230"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label="Illustrative shuttle route connecting North Gate, Library, Science Block and Main Campus">
+
+                            <path
+                                d="M48 175 L130 175 L190 110 L285 110 L365 45"
+                                stroke="#A7B8A9"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                fill="none"/>
+
+                            <path
+                                d="M130 175 L190 110"
+                                stroke="#526E5A"
+                                stroke-width="7"
+                                stroke-linecap="round"
+                                fill="none"/>
+
+                            <circle cx="48" cy="175" r="7" fill="#263D31"/>
+                            <circle cx="130" cy="175" r="7" fill="#263D31"/>
+                            <circle cx="190" cy="110" r="7" fill="#263D31"/>
+                            <circle cx="285" cy="110" r="7" fill="#263D31"/>
+
+                            <circle cx="365" cy="45" r="10" fill="#C16D4A"/>
+                            <circle cx="365" cy="45" r="4" fill="#FFFFFF"/>
+
+                            <g fill="#263D31"
+                                font-family="DM Sans, sans-serif"
+                                font-size="12"
+                                font-weight="600">
+
+                                <text x="20" y="205">North Gate</text>
+                                <text x="104" y="153">Library</text>
+                                <text x="165" y="88">Science Block</text>
+                                <text x="260" y="88">Sports Complex</text>
+                                <text x="320" y="25">Campus</text>
+
+                            </g>
+
+                        </svg>
+
+                    </div>
+
+                    <div class="visual-footer">
+                        <span>Illustrative route</span>
+                        <span>5 designated stops</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Services -->
+        <section class="services section" id="services">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-label">TRANSPORT SERVICES</p>
+                        <h2>Manage your journey</h2>
+                    </div>
+
+                    <p>
+                        Access the information and services needed
+                        to plan and manage campus transportation.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <h3>Shuttle Routes</h3>
+
+                        <p>
+                            Browse designated shuttle routes and
+                            find the stops available along each journey.
+                        </p>
+
+                        <a href="#routes" class="text-link">
+                            Explore routes →
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>Trip Schedules</h3>
+
+                        <p>
+                            Check departure times, trip dates,
+                            assigned vehicles and route information.
+                        </p>
+
+                        <a href="#routes" class="text-link">
+                            View schedules →
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>Seat Reservations</h3>
+
+                        <p>
+                            Check remaining seats on a trip,
+                            reserve your place and manage bookings.
+                        </p>
+
+                        <a href="pages/login.html" class="text-link">
+                            Manage bookings →
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>Transport Support</h3>
+
+                        <p>
+                            Submit transport complaints, report
+                            service issues and share feedback.
+                        </p>
+
+                        <a href="pages/login.html" class="text-link">
+                            Access support →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Routes -->
+        <section class="routes section" id="routes">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-label">SHUTTLE INFORMATION</p>
+                        <h2>Example shuttle routes</h2>
+                    </div>
+
+                    <p>
+                        Review sample route information and
+                        departure schedules.
+                    </p>
+
+                </div>
+
+
+                <div class="routes-table-wrapper">
+
+                    <table class="routes-table">
+
+                        <thead>
+                            <tr>
+                                <th>Route</th>
+                                <th>Departure</th>
+                                <th>Vehicle</th>
+                                <th>Service</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>Campus – Gulberg</strong>
+                                    <span>Route 01</span>
+                                </td>
+
+                                <td>08:00 AM</td>
+
+                                <td>BUS-01</td>
+
+                                <td>Morning</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>Campus – DHA</strong>
+                                    <span>Route 02</span>
+                                </td>
+
+                                <td>09:00 AM</td>
+
+                                <td>BUS-02</td>
+
+                                <td>Morning</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>Campus – Model Town</strong>
+                                    <span>Route 03</span>
+                                </td>
+
+                                <td>10:00 AM</td>
+
+                                <td>BUS-03</td>
+
+                                <td>Morning</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <p class="demo-note">
+                    These are sample routes and schedules.
+                    Actual transportation data will be provided
+                    through the system.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="about section" id="about">
+
+            <div class="container about-content">
+
+                <div>
+                    <p class="section-label">ABOUT THE SYSTEM</p>
+
+                    <h2>
+                        One platform for campus transportation.
+                    </h2>
+                </div>
+
+                <div class="about-description">
+
+                    <p>
+                        Campus Shuttle is a university transport
+                        management system designed to organize
+                        transportation services through a
+                        centralized platform.
+                    </p>
+
+                    <p>
+                        Students and faculty can access shuttle
+                        information, reserve seats and submit
+                        complaints, while administrators manage
+                        vehicles, drivers, routes and schedules.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-mark">C</span>
+                <span>Campus Shuttle</span>
+            </a>
+
+            <p>
+                University transportation management system.
+            </p>
+
+            <div class="footer-bottom">
+
+                <span>
+                    © <span id="year"></span> Campus Shuttle
+                </span>
+
+                <span>Academic Project</span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("Campus Shuttle Frontend Initialized" );
